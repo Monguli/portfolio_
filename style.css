@@ -421,3 +421,31 @@ margin-left:25px;
 .testimonial__speech-bubble a{
     color:var(--color-pink);
 }
+
+/* contact */
+
+#contact{
+    background-color: skyblue;
+}
+
+
+.contact__title{
+    margin:20px 0;
+}
+
+.contact__title,
+.contact__email{
+    color:white;
+}
+
+.contact__rights{
+    color:white;
+}
+
+.contact__links{
+    font-size:40px;
+    margin:20px 0;
+}
+.contact__links a{
+    margin:0 5px;
+}
