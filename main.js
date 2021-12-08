@@ -15,6 +15,9 @@ document.addEventListener('scroll', () => {
 // 
 
 
+
+
+
 const arrowup = document.querySelector('.arrowbtn')
 document.addEventListener('scroll', () => {
     if(window.scrollY > homeHeight / 2){
@@ -45,6 +48,14 @@ navbarMenu.addEventListener('click', () => {
     scrollTo.scrollIntoView({behavior:"smooth"});
 });
 
+// nav bar media screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',() => {
+    navbarMenu.classList.toggle('open');
+});
+
+
+
 
 // work click 
 const workbtn = document.querySelector('.work__categories');
@@ -56,6 +67,15 @@ workbtn.addEventListener('click', (e) => {
     if(filter == null) {
          return;
     }
+
+    // selecting //
+const active = document.querySelector('.category__btn.active');
+active.classList.remove('active');
+const target = e.target.nodeName === 'BUTTON' ? e.target : 
+                e.target.parentNode;
+target.classList.add('active');
+
+
     project.classList.add('animationout');
     setTimeout(()=>{
         projects.forEach((project) => {
