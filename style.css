@@ -351,6 +351,14 @@ flex-basis: 40%;
     justify-content: center;
     max-width:1200px;
     margin:auto;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.work__projects.animationout{
+    opacity: 0;
+    transform: scale(0.95) translateY(50px);
+
 }
 
 .project{
@@ -362,6 +370,10 @@ flex-basis: 40%;
     height: 250px;
     margin:2px;
     background-color:var(--color-light-white);
+}
+
+.project.invisible{
+    display: none;
 }
 
 .project__img{
@@ -473,6 +485,22 @@ margin-left:25px;
 }
 .contact__links a{
     margin:0 5px;
+}
+
+/* Arrow Up */
+.arrowbtn{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    font-size:50px;
+    color:blue;
+    opacity: 0;
+    transition: all 300ms ease-in;
+    pointer-events: none;
+}
+.arrowbtn.visible{
+    opacity: 0.5;
+    pointer-events:auto;
 }
 
 
