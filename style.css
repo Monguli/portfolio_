@@ -103,6 +103,7 @@ p{
 
 .navbar__menu{
     display: flex;
+    margin:0 0 -1px 0;
 }
 #navbar .navbar__logo{
     font-size:var(--font-medium);
