@@ -96,9 +96,10 @@ p{
     background-color: transparent;
     align-items: center;
     color:var(--color-white);
-    padding:16px 16px 20px 16px;
+    padding:16px 25px 20px 16px;
     transition: all 0.3s linear;
     z-index: 1;
+    
 }
 
 .navbar__menu{
@@ -468,12 +469,18 @@ margin-left:25px;
 
 
 .contact__title{
-    margin:20px 0;
+    margin:0;
 }
 
-.contact__title,
+
 .contact__email{
     color:white;
+    font-size:15px;
+}
+
+.contact__title{
+    color:white;
+    font-size:30px;
 }
 
 .contact__rights{
@@ -481,8 +488,8 @@ margin-left:25px;
 }
 
 .contact__links{
-    font-size:40px;
-    margin:20px 0;
+    font-size:20px;
+    margin:10px 0;
 }
 .contact__links a{
     margin:0 5px;
@@ -500,7 +507,7 @@ margin-left:25px;
     pointer-events: none;
 }
 .arrowbtn.visible{
-    opacity: 0.5;
+    opacity: 0.6;
     pointer-events:auto;
 }
 
@@ -509,7 +516,7 @@ margin-left:25px;
  
     #navbar{
         flex-direction: column;
-        align-items: flex-start;    
+        align-items: center;  
     }
     .navbar__menu{
         width: 100%;
@@ -519,6 +526,7 @@ margin-left:25px;
     }
     .navbar__menu.open{
         display: block;
+        text-align: center;
     }
 
     .navbar__toggle-btn{

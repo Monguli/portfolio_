@@ -18,20 +18,19 @@ document.addEventListener('scroll', () => {
 
 
 
-const arrowup = document.querySelector('.arrowbtn')
+const arrowUp = document.querySelector('.arrowbtn')
 document.addEventListener('scroll', () => {
-    if(window.scrollY > homeHeight / 2){
-    arrowup.classList.add('visible');
-}else{
-    arrowup.classList.remove('visible');
+    if (window.scrollY > homeHeight / 2){
+    arrowUp.classList.add('visible');
+} else {
+    arrowUp.classList.remove('visible');
 }
 });
 
-
-// Clik arrow up
-arrowup.addEventListener('click', () => {
-   scrollIntoView("#home");
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
 });
+
 
 
 // 클릭하면 바로 해당메뉴로 스크롤링되는 네비메뉴//
@@ -43,10 +42,13 @@ navbarMenu.addEventListener('click', () => {
     if(link == null){
         return;
     }
-    console.log(event.target.dataset.link);
+    navbarMenu.classList.remove('open');
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:"smooth"});
 });
+
+
+
 
 // nav bar media screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
